@@ -7,13 +7,22 @@
   <title>ES6 - inflearn</title>
   <style>
     .blogList ul{overflow:hidden;list-style:none;}
-    .blogList li{float:left;width:200px;height:200px;border:1px solid #dbdbdb;margin:10px;box-sizing:border-box;padding:10px;}
+    .blogList li{float:left;position:relative;width:200px;height:200px;border:1px solid #dbdbdb;margin:10px;box-sizing:border-box;padding:10px;}
     .blogList li a{color:#000;}
+    .start{
+      background:#f0f0f0;font-size:15px;padding:10px;margin:10px;
+    }
+    .btn_mine{
+      position:absolute;bottom:10px;left:10px;width:80px;height:30px;background:#000;color:#fff;border-radius:0;font-size:14px;
+    }
+    .btn_mine.active{
+      background:#fcfcfc;color:#aaa;
+    }
   </style>
 </head>
 <body>
   <section class="controller">
-    <button type="button" class="start">코드스쿼드 블로그입니다.</button>
+    <button type="button" class="start">코드스쿼드 블로그 보기</button>
   </section>
 
   <section class="section blogList">
